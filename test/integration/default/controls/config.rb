@@ -26,9 +26,7 @@ control 'unbound.config.file' do
       should include(
         '"tofs": {"files_switch": ["any/path/can/be/used/here", "id", '\
         '"roles", "osfinger", "os", "os_family"], "source_files": '\
-        '{"unbound-config-file-file-managed": ["example.tmpl.jinja"], '\
-        '"unbound-subcomponent-config-file-file-managed": '\
-        '["subcomponent-example.tmpl.jinja"]}'
+        '{"unbound-config-file-file-managed": ["example.tmpl.jinja"]}'
       )
       # rubocop:enable Layout/LineLength
       # rubocop:enable Lint/RedundantCopDisableDirective

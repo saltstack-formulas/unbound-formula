@@ -129,28 +129,6 @@ dependency on ``unbound.service.clean`` via include list.
 This state will remove the unbound package and has a depency on
 ``unbound.config.clean`` via include list.
 
-``unbound.subcomponent``
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-*Meta-state (This is a state that includes other states)*.
-
-This state installs a subcomponent configuration file before
-configuring and starting the unbound service.
-
-``unbound.subcomponent.config``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This state will configure the unbound subcomponent and has a
-dependency on ``unbound.config`` via include list.
-
-``unbound.subcomponent.config.clean``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This state will remove the configuration of the unbound subcomponent
-and reload the unbound service by a dependency on
-``unbound.service.running`` via include list and ``watch_in``
-requisite.
-
 Testing
 -------
 

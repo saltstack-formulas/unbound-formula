@@ -13,4 +13,5 @@
 ---
 values:
   rootgroup: wheel
+  config: '/usr/local/etc/unbound/unbound.conf'
 ...

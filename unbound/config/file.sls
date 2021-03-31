@@ -13,7 +13,7 @@ include:
 unbound-config-file-file-managed:
   file.managed:
     - name: {{ unbound.config }}
-    - source: {{ files_switch(['example.tmpl'],
+    - source: {{ files_switch(['unbound.conf'],
                               lookup='unbound-config-file-file-managed'
                  )
               }}
@@ -22,6 +22,7 @@ unbound-config-file-file-managed:
     - group: {{ unbound.rootgroup }}
     - makedirs: True
     - template: jinja
+    - check_cmd: unbound-checkconf
     - require:
       - sls: {{ sls_package_install }}
     - context:

@@ -7,7 +7,7 @@ values:
   pkg:
     name: unbound
   rootgroup: root
-  config: '/etc/unbound'
+  config: '/etc/unbound/unbound.conf'
   service:
     name: unbound
   # Just here for testing

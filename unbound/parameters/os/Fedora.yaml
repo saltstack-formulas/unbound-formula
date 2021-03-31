@@ -12,8 +12,6 @@
 # values: {}
 ---
 values:
-  pkg:
-    name: unbound-fedora
-  service:
-    name: service-fedora
+  config: '/etc/unbound/unbound.conf'
+  config_dir: '/etc/unbound'
 ...

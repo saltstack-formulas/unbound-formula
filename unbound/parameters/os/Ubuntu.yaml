@@ -11,8 +11,5 @@
 # you can remove this file or provide at least an empty dict, e.g.
 # values: {}
 ---
-values:
-  pkg:
-    name: unbound-ubuntu
-  config: /etc/unbound.d/custom-ubuntu.conf
+values: {}
 ...

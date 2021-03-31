@@ -489,7 +489,7 @@ Here is an example based on `template-formula/unbound/config/file.sls`_:
     unbound-config-file-file-managed:
       file.managed:
         - name: {{ unbound.config }}
-        - source: {{ files_switch(['example.tmpl'],
+        - source: {{ files_switch(['unbound.conf'],
                                   lookup='unbound-config-file-file-managed'
                      )
                   }}

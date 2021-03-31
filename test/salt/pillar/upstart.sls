@@ -43,7 +43,7 @@ unbound:
     # For testing purposes
     source_files:
       unbound-config-file-file-managed:
-        - 'example.tmpl.jinja'
+        - 'unbound.conf.jinja'
 
   # Just for testing purposes
   winner: pillar

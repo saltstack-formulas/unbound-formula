@@ -18,8 +18,14 @@ unbound-formula
    :scale: 100%
    :target: https://github.com/pre-commit/pre-commit
 
-A SaltStack formula that is empty. It has dummy content to help with a quick
-start on a new formula and it serves as a style guide.
+A SaltStack formula which manages _unbound_.
+
+The actual configuration file is out of scope.
+It's not trivial to map Pillar data to ubound's configuration format.
+Furthermore it's not clear that this the best approach in all use-cases.
+
+Therefore this formula assumes you'll provide a configuration file (or a template)
+following the `TOFS pattern <https://template-formula.readthedocs.io/en/latest/TOFS_pattern.html>`_.
 
 .. contents:: **Table of Contents**
    :depth: 1

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # vim: ft=yaml
 ---
-TEMPLATE:
+unbound:
   lookup:
     master: template-master
     # Just for testing purposes
@@ -42,9 +42,9 @@ TEMPLATE:
 
     # For testing purposes
     source_files:
-      TEMPLATE-config-file-file-managed:
+      unbound-config-file-file-managed:
         - 'example.tmpl.jinja'
-      TEMPLATE-subcomponent-config-file-file-managed:
+      unbound-subcomponent-config-file-file-managed:
         - 'subcomponent-example.tmpl.jinja'
 
   # Just for testing purposes

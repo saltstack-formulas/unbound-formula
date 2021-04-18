@@ -13,4 +13,5 @@
 ---
 values:
   config: /etc/unbound.conf
+  config_dir: /etc
 ...

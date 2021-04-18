@@ -8,6 +8,7 @@ values:
     name: unbound
   rootgroup: root
   config: '/etc/unbound/unbound.conf'
+  config_dir: '/etc/unbound'
   service:
     name: unbound
   # Just here for testing

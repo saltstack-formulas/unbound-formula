@@ -23,6 +23,7 @@ unbound-config-file-file-managed:
     - makedirs: True
     - template: jinja
     - check_cmd: unbound-checkconf
+    - tmp_dir: {{ unbound.config_dir }}
     - require:
       - sls: {{ sls_package_install }}
     - context:

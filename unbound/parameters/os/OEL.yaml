@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+---
+values:
+  config: '/etc/unbound/unbound.conf'
+  config_dir: '/etc/unbound'
+...
